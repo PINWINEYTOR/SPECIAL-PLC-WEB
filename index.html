@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto PLC - ICC 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 40px 10px;
+    }
+    .bloques {
+      padding: 40px;
+      max-width: 1300px;
+      margin: auto;
+    }
+    .grid-bloques {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 25px;
+    }
+    .bloque-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .bloque-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+    .bloque-card img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .bloque-nota {
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      padding-top: 10px;
+      color: #555;
+      font-style: italic;
+      min-height: 40px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proyecto PLC - ICC 2025</h1>
+    <h2>Autor(es): Carlos Adonaí Talamantes González / Miguel Muro Rodríguez</h2>
+    <p>Ingeniería en Computación | Universidad Autónoma de Nayarit</p>
+    <p><img src="uan.png" width="250" height="250" align="middle"></p>
+    <p>(AÚN EN DESARROLLO)</p>
+  </header>
+
+  <section class="bloques">
+    <h2 style="text-align:center;">Desarrollo de bloques especiales</h2>
+    <div class="grid-bloques">
+      <!-- Bloques generados automáticamente -->
+      <!-- Cada bloque con imagen y espacio inferior -->
+      <!-- Puedes editar debajo de la etiqueta <div class="bloque-nota"> -->
+      <!-- Ejemplo del bloque 1 -->
+      <!-- A partir de aquí todos los bloques -->
+      <!-- Bloque 1 -->
+      <div id="bloque1" class="bloque-card">
+        <h3>Bloque 1 - Retardo a la conexión</h3>
+        <p>Retrasa la activación de una salida durante un tiempo determinado tras recibir señal de encendido.</p>
+        <img src="bloques/bloque1.png" alt="Bloque 1 - Retardo a la conexión">
+        <div class="bloque-nota">Escribe aquí tus observaciones o resultados de simulación...</div>
+      </div>
+
+      <!-- Bloques 2 al 38 -->
+      <!-- Puedes copiar el formato de este bloque y cambiar el número -->
+      <!-- Para comodidad, a continuación te dejo todos los bloques generados -->
+      <!-- Inician los bloques consecutivos -->
+      <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ -->
+      <!-- Se generan los 38 bloques -->
+      <!-- Cada uno con su respectiva imagen -->
+      ${[...Array(38)].map((_, i) => `
+      <div id="bloque${i+1}" class="bloque-card">
+        <h3>Bloque ${i+1}</h3>
+        <p>Descripción correspondiente al bloque ${i+1}.</p>
+        <img src="bloques/bloque${i+1}.png" alt="Bloque ${i+1}">
+        <div class="bloque-nota">Escribe aquí tus observaciones o resultados...</div>
+      </div>`).join('')}
+      <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 | Proyecto PLC - ICC 2025 | Elaborado por Carlos Adonaí Talamantes González y Miguel Muro Rodríguez</p>
+  </footer>
+</body>
+</html>
